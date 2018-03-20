@@ -1,4 +1,5 @@
 .DS_store
+config.py
 
 # fantasy api data keys 
 config.py
