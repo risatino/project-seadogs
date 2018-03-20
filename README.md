@@ -61,7 +61,7 @@ __The following APIs are Open Source or trial data sets__
 * FG Made (0-49 yards): 3 points
 * FG Made (50+ yards): 5 points
 
-#### Other Tips
+#### Other Definitions:
 * Average Draft Position (ADP)
 
 #### Script Build: fetch data from web scraping Fantasy Data sets
