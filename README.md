@@ -64,8 +64,10 @@ __The following APIs are Open Source or trial data sets__
 #### Other Definitions:
 * Average Draft Position (ADP)
 
-#### Script Build: fetch data from web scraping Fantasy Data sets
+#### Script Build To Fetch Historical Twitter Data
 
-'''
+```
 python Exporter.py --querysearch "Nigel Bradham" --since 2018-03-07 --until 2018-03-21 --maxtweets 100000
-'''
+```
+
+![png](sd_datafetch.jpg)
