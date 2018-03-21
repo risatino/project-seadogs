@@ -66,7 +66,8 @@ __The following APIs are Open Source or trial data sets__
 
 #### Script Build To Fetch Historical Twitter Data
 
-'''
+```
 python Exporter.py --querysearch "Nigel Bradham" --since 2018-03-07 --until 2018-03-21 --maxtweets 100000
-'''
+```
+
 ![png](sd_datafetch.png)
