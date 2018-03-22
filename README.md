@@ -1,5 +1,8 @@
 ### Project Seadogs: NFL Player Analysis
 
+#### NFL Player Count & Type of Crime Overview
+![png](header_overview.png)
+
 #### Data Sources
 __The following APIs are Open Source or trial data sets__
 
@@ -10,8 +13,8 @@ __The following APIs are Open Source or trial data sets__
 
 #### Overview
 * Fantasy Data API awards points to individual defensive players (IDP Scoring)
-* They use fractional points
-* They use negative points
+* Fantasy Data uses fractional points
+* Fantasy Data uses negative points
 
 #### Offensive Players
 * Passing Yards: 1 point per 25 yards
@@ -42,7 +45,9 @@ __The following APIs are Open Source or trial data sets__
 * Points Allowed (28-34): -1 points
 * Points Allowed (35+): -4 points
 
-#### Individual Defensive Players
+#### Individual Defensive Players 
+(Defensive Players are not applicable with our Fantasy Data)
+
 * Solo Tackles: 1 point
 * Assisted Tackles: ½ point
 * Sacks: 2 points
@@ -70,4 +75,4 @@ __The following APIs are Open Source or trial data sets__
 python Exporter.py --querysearch "Nigel Bradham" --since 2018-03-07 --until 2018-03-21 --maxtweets 100000
 ```
 
-![png](sd_datafetch.jpg)
+![png](sd_datafetch.jpg =300x300)
