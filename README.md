@@ -4,7 +4,7 @@
 ![png](header_overview.png)
 
 #### Data Sources
-__The following APIs are Open Source or trial data sets__
+__The following are either Open Source or (7-day trial) Training Data Sets we worked off of__
 
 **APIs:** 
 [Fantasy Data](https://developer.fantasydata.com/) was difficult to obtain with the free trial so we have sample data to develop data analysis process to answer our questions.
