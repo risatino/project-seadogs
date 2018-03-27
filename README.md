@@ -1,78 +1,34 @@
-### Project Seadogs: NFL Player Analysis
+### Project Seadogs: NFL Player Arrests
 
-#### NFL Player Count & Type of Crime Overview
-![png](header_overview.png)
+## Questions
+
+* What is the effect (if any) arrests have on a football players career or tenure with a team?
+* Does arrest activity have any effect on a players perceived performance value?
+* Does arrest activity have any effect on a players public brand?
+
+## Summary of Findings
+
+Overall, arrest activity appears to have a limited effect on an NFL players longevity with a team. Using data pulled from nflarrest.com, our team pulled 495 arrest records dating from January 2008 through March 2018. Over that timeframe, all 32 teams encountered arrest activity with the Houston Texans having the least and the Denver Broncos having the most (i.e., 9 and 29 instances, respectively). 
+Our first theory assumed that type of charge would have the greatest effect on whether a player was traded/released. To test the theory, we totaled the type of charges based on arrest data and paired those charge types against when a player was traded/released*. Based on that analysis, our findings indicate that heavier charges, including assault/battery, domestic violence, and gun related charges led to much higher count of trades than lighter charges including, traffic offenses, theft, and disorderly conduct. However, the heavier types of charges are minimal in the aggregate view of arrest activity. 
+
+Aside from type of charge, we hypothesized that arrest frequency would have a role in whether a player was traded/released. From that assumption, we limited our scope to the top 50 current players with the most arrests. Of those 50 players, 28 were neither traded or released with 270 days of any one of their arrests. Conversely, there were only a few instances where a trade/release occurred within two weeks of an arrest. In those circumstances, the type of crime played a larger role than frequency; there were only 7 instances where a DUI led to a trade. Based on these statistics, our conclusion is that arrest frequency has little effect on whether a player is traded/released.
+
+*We considered a trade/release to be potentially correlated to an arrest if the trade/release occurred within 270 days of the arrest. This may feel longer than necessary, but in many instances, protracted team investigations extended the expected timeframe. Further, the longer period provides added confidence that we have accounted for all positive instances.
+
+Generally speaking, it does appear that the public opinion of NFL players declines after a trade and/or committing a crime.  That said, to what extent the crime is responsible for a decline in overall sentiment is debatable. Other factors that could be more comprehensively measured alongside criminal activity might be player performance, team performance or some quasi-measurement of a player’s public persona as it relates to their off-the-field image (e.g. publically donates to charity, etc.). Of the sampled players, Kenny Britt, Marshawn Lynch, and Nigel Bradham seem to defy this trend the most. This divergence may simply be a result of a player’s relative “stickiness”, where the ability of the player to help a given team succeed simply outweighs the negative perception surrounding their criminal history.
+
+
 
 #### Data Sources
-__The following are either Open Source or (7-day trial) Training Data Sets we worked off of__
 
-**APIs:** 
-[Fantasy Data](https://developer.fantasydata.com/) was difficult to obtain with the free trial so we have sample data to develop data analysis process to answer our questions.
+Arrest Data(API):  nflarrest.com/api/
+Trade Data (web scrape): prosportstransactions.com/football/
+NFL Fantasy Data (web scrape): fantasydata.com
+Twitter Sentiment (web scrape): https://developer.twitter.com/
 
-**NFL Fantasy Points Scoring System**
+#### Sentiment Analysis
 
-#### Overview
-* Fantasy Data API awards points to individual defensive players (IDP Scoring)
-* Fantasy Data uses fractional points
-* Fantasy Data uses negative points
+Hutto, C.J. & Gilbert, E.E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. Eighth International Conference on Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014
 
-#### Offensive Players
-* Passing Yards: 1 point per 25 yards
-* Passing Touchdowns: 4 points
-* Passing Interceptions: -2 points
-* Rushing Yards: 1 point per 10 yards
-* Rushing Touchdowns: 6 points
-* Receptions: 1 points (only if using PPR scoring)
-* Receiving Yards: 1 point per 10 yards
-* Receiving Touchdowns: 6 points
-* 2-Point Conversions: 2 points
-* Fumbles Lost: -2 points
-* Fumble Recovered for a Touchdown: 6 points
-
-#### Team Defense / Special Teams
-* Sacks: 1 point
-* Interceptions: 2 points
-* Fumbles Recovered: 2 points
-* Safeties: 2 points
-* Defensive Touchdowns: 6 points
-* Kick and Punt Return Touchdowns: 6 points
-* 2-Point Conversion Returns: 2 points
-* Points Allowed (0): 10 points
-* Points Allowed (1-6): 7 points
-* Points Allowed (7-13): 4 points
-* Points Allowed (14-20): 1 points
-* Points Allowed (21-27): 0 points
-* Points Allowed (28-34): -1 points
-* Points Allowed (35+): -4 points
-
-#### Individual Defensive Players 
-(Defensive Players are not applicable with our Fantasy Data)
-
-* Solo Tackles: 1 point
-* Assisted Tackles: ½ point
-* Sacks: 2 points
-* Sack Yards: 1 point per 10 yards
-* Tackles For Loss: 1 point
-* Quarterback Hits: 1 point
-* Passes Defended: 1 point
-* Interceptions: 3 points
-* Fumbles Forced: 3 points
-* Fumbles Recovered: 3 points
-* Defensive Touchdowns: 6 points
-* 2-Point Conversion Returns: 2 points
-
-#### Kicking
-* PAT Made: 1 point
-* FG Made (0-49 yards): 3 points
-* FG Made (50+ yards): 5 points
-
-#### Other Definitions:
-* Average Draft Position (ADP)
-
-#### Script Build To Fetch Historical Twitter Data
-
-```
-python Exporter.py --querysearch "Nigel Bradham" --since 2018-03-07 --until 2018-03-21 --maxtweets 100000
-```
 
 ![png](sd_datafetch.jpg)
