@@ -17,18 +17,15 @@ Aside from type of charge, we hypothesized that arrest frequency would have a ro
 
 Generally speaking, it does appear that the public opinion of NFL players declines after a trade and/or committing a crime.  That said, to what extent the crime is responsible for a decline in overall sentiment is debatable. Other factors that could be more comprehensively measured alongside criminal activity might be player performance, team performance or some quasi-measurement of a player’s public persona as it relates to their off-the-field image (e.g. publically donates to charity, etc.). Of the sampled players, Kenny Britt, Marshawn Lynch, and Nigel Bradham seem to defy this trend the most. This divergence may simply be a result of a player’s relative “stickiness”, where the ability of the player to help a given team succeed simply outweighs the negative perception surrounding their criminal history.
 
-
-
 #### Data Sources
 
-Arrest Data(API):  nflarrest.com/api/
-Trade Data (web scrape): prosportstransactions.com/football/
-NFL Fantasy Data (web scrape): fantasydata.com
-Twitter Sentiment (web scrape): https://developer.twitter.com/
+Arrest Data(API):  nflarrest.com/api/  
+Trade Data (web scrape): prosportstransactions.com/football   
+NFL Fantasy Data (web scrape): fantasydata.com  
+Twitter Sentiment (web scrape): https://developer.twitter.com/  
 
 #### Sentiment Analysis
 
 Hutto, C.J. & Gilbert, E.E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. Eighth International Conference on Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014
-
 
 ![png](sd_datafetch.jpg)
